@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "460677981430",
+    "project_id": "fun-letters-4aa81",
+    "storage_bucket": "fun-letters-4aa81.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:460677981430:android:e592865314d4c14b6fb8d7",
+        "android_client_info": {
+          "package_name": "com.example.wist"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyD0eeLFBJ13QbKtEFWKuqCMmdFHa-F8kTI"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
