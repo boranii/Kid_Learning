@@ -1,22 +1,25 @@
+import 'package:audioplayers/audioplayers.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_svg/svg.dart';
-import 'package:wist/modules/letterTmahLevel.dart';
-
-import '../my__icons_icons.dart';
+import '../../my__icons_icons.dart';
 import '../shard/components/components.dart';
 import '../shard/styles/color.dart';
-class ThmahLevel extends StatefulWidget {
+import 'chooseLetter.dart';
+class LetterThmahLevel extends StatefulWidget {
   final int index;
-  const ThmahLevel({super.key, required this.index});
+  const LetterThmahLevel({super.key, required this.index});
 
   @override
-  State<ThmahLevel> createState() => _ThmahLevelState();
+  State<LetterThmahLevel> createState() => _LetterThmahLevelState();
 }
 
-class _ThmahLevelState extends State<ThmahLevel> {
+class _LetterThmahLevelState extends State<LetterThmahLevel> {
+  final player = AudioPlayer();
+
+  int selectedIndex = 3;
   @override
   Widget build(BuildContext context) {
-    return SafeArea(
+    return  SafeArea(
       child: Scaffold(
         body: Padding(
           padding: const EdgeInsets.only(bottom: 0),
@@ -73,34 +76,54 @@ class _ThmahLevelState extends State<ThmahLevel> {
               // SizedBox(
               //   height: 50,
               // ),
-          Padding(
-            padding: const EdgeInsets.only(right: 100),
-            child: SvgPicture.asset(
-              "assets/2.svg",
-              width: 238,
-              height: 250,
-              alignment: Alignment.center,
-            ),),
-              // SizedBox(
-              //   height: 10,
-              // ),
-              Container(
-                // height: 190,
-                // width: 250,
-                alignment: Alignment.topRight,
+              Padding(
+                padding: const EdgeInsets.only(right: 100),
                 child: SvgPicture.asset(
-                  "assets/2222.svg",
+                  "assets/222.svg",
+                  alignment: Alignment.center,
+                  height: 350,
+                  width: 238,
+
+                ),),
+              GestureDetector(
+                child: Stack(
+                  children: [
+                    Padding(
+                      padding: const EdgeInsets.only(left: 60.0,bottom: 10.0),
+                      child: Text('$selectedIndex',style: TextStyle(fontSize: 35,fontWeight: FontWeight.w100,fontFamily: 'Blabeloo',color:colorprogres1 ,
+                          decorationColor: taxtcolor
+                      ),),
+                    ),
+                    Padding(
+                      padding: const EdgeInsets.only(top: 10.0),
+                      child: SvgPicture.asset(
+                        "assets/microphone.svg",
+                      ),
+                    ),
+                  ],
+
                 ),
+                onTap: () {
+
+                  setState(() {
+                    if (selectedIndex > 0) {
+                      selectedIndex--;
+                      player.play(AssetSource('a.mp3'));
+                    }
+                  });
+
+                  print(selectedIndex);
+                },
               ),
-      
-      
+
+
               // SizedBox(
-              //   height: 0,
+              //   height: 20,
               // ),
               defultButton(
                   pagename: () {
-                    Navigator.of(context).push(MaterialPageRoute(builder: (context)=>LetterThmahLevel(index: widget.index),),);
-                  },
+                    Navigator.push(context,
+                        MaterialPageRoute(builder: (context) =>  ChooseLetter(index: widget.index,)));                  },
                   text: "التالي"),
             ],
           ),

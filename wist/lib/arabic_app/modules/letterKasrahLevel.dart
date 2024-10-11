@@ -1,21 +1,20 @@
 import 'package:audioplayers/audioplayers.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_svg/svg.dart';
-import 'package:wist/modules/thmahLevel.dart';
 
-import '../my__icons_icons.dart';
+import '../../my__icons_icons.dart';
 import '../shard/components/components.dart';
 import '../shard/styles/color.dart';
 import 'chooseLetter.dart';
-class LetterFathaLevel extends StatefulWidget {
+class LetterKasrahLevel extends StatefulWidget {
   final int index;
-  const LetterFathaLevel({super.key, required this.index});
+  const LetterKasrahLevel({super.key, required this.index});
 
   @override
-  State<LetterFathaLevel> createState() => _LetterFathaLevelState();
+  State<LetterKasrahLevel> createState() => _LetterKasrahLevelState();
 }
 
-class _LetterFathaLevelState extends State<LetterFathaLevel> {
+class _LetterKasrahLevelState extends State<LetterKasrahLevel> {
   final player = AudioPlayer();
 
   int selectedIndex = 3;
@@ -23,7 +22,7 @@ class _LetterFathaLevelState extends State<LetterFathaLevel> {
   Widget build(BuildContext context) {
     return Scaffold(
       body: Padding(
-        padding: const EdgeInsets.only(bottom: 20),
+        padding: const EdgeInsets.only(bottom: 30),
         child: Column(
           mainAxisAlignment: MainAxisAlignment.spaceEvenly,
           children: [
@@ -77,12 +76,12 @@ class _LetterFathaLevelState extends State<LetterFathaLevel> {
             // SizedBox(
             //   height: 50,
             // ),
-            Padding(
-              padding: const EdgeInsets.only(right: 50),
-              child: SvgPicture.asset(
-                "assets/111.svg",
-                height: 400,
-              ),),
+            SvgPicture.asset(
+              "assets/333.svg",
+              width: 238,
+              height: 390,
+              alignment: Alignment.center,
+            ),
             GestureDetector(
               child: Stack(
                 children: [
@@ -113,6 +112,8 @@ class _LetterFathaLevelState extends State<LetterFathaLevel> {
                 print(selectedIndex);
               },
             ),
+
+
             // SizedBox(
             //   height: 20,
             // ),

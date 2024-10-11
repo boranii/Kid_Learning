@@ -2,15 +2,12 @@ import 'package:flutter/foundation.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
 import 'package:flutter_svg/flutter_svg.dart';
-import 'package:wist/modules/storiesLevel.dart';
-
+import 'package:wist/arabic_app/modules/storiesLevel.dart';
 // import 'package:wist/my__icons_icons.dart';
-
 import '../shard/components/components.dart';
 import '../shard/cubit/cubit.dart';
 import '../shard/cubit/states.dart';
 import '../shard/styles/color.dart';
-import '../shared/components/components.dart';
 import 'Map_level.dart';
 
 class Levels extends StatefulWidget {

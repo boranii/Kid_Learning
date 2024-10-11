@@ -5,11 +5,11 @@ import 'package:flutter_bloc/flutter_bloc.dart';
 import 'package:flutter_svg/svg.dart';
 import 'package:audioplayers/audioplayers.dart';
 import 'package:wist/my__icons_icons.dart';
-import 'package:wist/shard/cubit/cubit.dart';
-import 'package:wist/shard/cubit/states.dart';
 // import 'package:wist/shared/components/components.dart';
 import '../models/levels.dart';
 import '../shard/components/components.dart';
+import '../shard/cubit/cubit.dart';
+import '../shard/cubit/states.dart';
 import '../shard/styles/color.dart';
 import 'drawingPage.dart';
 

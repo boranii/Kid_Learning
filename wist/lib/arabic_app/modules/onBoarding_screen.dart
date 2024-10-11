@@ -1,13 +1,11 @@
 // ignore_for_file: file_names, duplicate_ignore
 import 'package:flutter/material.dart';
 import 'package:smooth_page_indicator/smooth_page_indicator.dart';
-import 'package:wist/modules/Level.dart';
-// import 'package:wist/modules/splash_screen.dart';
-import 'package:wist/shared/components/components.dart';
+import 'package:wist/arabic_app/modules/level.dart'as l;
 import '../models/onboarding.dart';
 import '../shard/components/components.dart';
 import '../shard/styles/color.dart';
-// import 'package:wist/my__icons_icons.dart';
+import 'package:wist/my__icons_icons.dart';
 
 class OnBoardingScreen extends StatefulWidget {
   const OnBoardingScreen({super.key});
@@ -56,7 +54,7 @@ class _OnBoardingScreenState extends State<OnBoardingScreen> {
             ),
             defultButton(pagename:  () {
               if (isLast) {
-                Navigator.of(context).pushReplacement(MaterialPageRoute(builder: (context)=>Levels(level: 1)),);
+                Navigator.of(context).pushReplacement(MaterialPageRoute(builder: (context)=> const l.Levels(level: 1)),);
               }else {
                 boardController.nextPage(
                     duration: const Duration(

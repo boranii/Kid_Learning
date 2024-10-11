@@ -1,8 +1,10 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
-import 'package:wist/modules/story_level.dart';
-import 'package:wist/shard/cubit/cubit.dart';
-import 'package:wist/shard/cubit/states.dart';
+import 'package:wist/arabic_app/modules/story_level.dart';
+
+import '../shard/cubit/cubit.dart';
+import '../shard/cubit/states.dart';
+
 
 class StoriesLevel extends StatefulWidget {
   const StoriesLevel({super.key});

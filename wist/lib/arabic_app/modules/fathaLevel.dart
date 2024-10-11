@@ -4,13 +4,13 @@ import 'package:audioplayers/audioplayers.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
 import 'package:flutter_svg/svg.dart';
-import 'package:wist/modules/letterFathaLevel.dart';
+import '../../my__icons_icons.dart';
 import '../models/levels.dart';
-import '../my__icons_icons.dart';
 import '../shard/components/components.dart';
 import '../shard/cubit/cubit.dart';
 import '../shard/cubit/states.dart';
 import '../shard/styles/color.dart';
+import 'letterFathaLevel.dart';
 
 class FathaLevel extends StatefulWidget {
   final int index;

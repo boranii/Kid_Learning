@@ -4,7 +4,7 @@ import 'package:flutter/foundation.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
 import 'package:flutter_svg/svg.dart';
-import 'package:wist/shard/cubit/states.dart';
+import 'package:wist/arabic_app/shard/cubit/states.dart';
 import '../../models/levels.dart';
 import '../../models/story.dart';
 import '../styles/color.dart';

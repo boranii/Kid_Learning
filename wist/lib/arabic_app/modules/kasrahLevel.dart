@@ -1,10 +1,9 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_svg/svg.dart';
-import 'package:wist/modules/letterKasrahLevel.dart';
-
-import '../my__icons_icons.dart';
+import '../../my__icons_icons.dart';
 import '../shard/components/components.dart';
 import '../shard/styles/color.dart';
+import 'letterKasrahLevel.dart';
 class KasrahLevel extends StatefulWidget {
   final int index;
   const KasrahLevel({super.key, required this.index});

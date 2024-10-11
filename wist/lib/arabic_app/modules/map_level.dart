@@ -10,11 +10,9 @@ import 'package:flutter/foundation.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
 import 'package:flutter_svg/flutter_svg.dart';
-import 'package:wist/modules/Level.dart';
-
+import 'package:wist/arabic_app/modules/Level.dart';
 // import 'package:level_map/utils/image_offset_extension.dart';
-import 'package:wist/shared/components/components.dart';
-import '../my__icons_icons.dart';
+import '../../my__icons_icons.dart';
 import '../shard/components/components.dart';
 import '../shard/cubit/cubit.dart';
 import '../shard/cubit/states.dart';

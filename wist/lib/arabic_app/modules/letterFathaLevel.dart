@@ -1,21 +1,19 @@
 import 'package:audioplayers/audioplayers.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_svg/svg.dart';
-import 'package:wist/modules/drawingPage.dart';
-
-import '../my__icons_icons.dart';
+import '../../my__icons_icons.dart';
 import '../shard/components/components.dart';
 import '../shard/styles/color.dart';
 import 'chooseLetter.dart';
-class LetterKasrahLevel extends StatefulWidget {
+class LetterFathaLevel extends StatefulWidget {
   final int index;
-  const LetterKasrahLevel({super.key, required this.index});
+  const LetterFathaLevel({super.key, required this.index});
 
   @override
-  State<LetterKasrahLevel> createState() => _LetterKasrahLevelState();
+  State<LetterFathaLevel> createState() => _LetterFathaLevelState();
 }
 
-class _LetterKasrahLevelState extends State<LetterKasrahLevel> {
+class _LetterFathaLevelState extends State<LetterFathaLevel> {
   final player = AudioPlayer();
 
   int selectedIndex = 3;
@@ -23,7 +21,7 @@ class _LetterKasrahLevelState extends State<LetterKasrahLevel> {
   Widget build(BuildContext context) {
     return Scaffold(
       body: Padding(
-        padding: const EdgeInsets.only(bottom: 30),
+        padding: const EdgeInsets.only(bottom: 20),
         child: Column(
           mainAxisAlignment: MainAxisAlignment.spaceEvenly,
           children: [
@@ -77,12 +75,12 @@ class _LetterKasrahLevelState extends State<LetterKasrahLevel> {
             // SizedBox(
             //   height: 50,
             // ),
-            SvgPicture.asset(
-              "assets/333.svg",
-              width: 238,
-              height: 390,
-              alignment: Alignment.center,
-            ),
+            Padding(
+              padding: const EdgeInsets.only(right: 50),
+              child: SvgPicture.asset(
+                "assets/111.svg",
+                height: 400,
+              ),),
             GestureDetector(
               child: Stack(
                 children: [
@@ -113,8 +111,6 @@ class _LetterKasrahLevelState extends State<LetterKasrahLevel> {
                 print(selectedIndex);
               },
             ),
-
-
             // SizedBox(
             //   height: 20,
             // ),
